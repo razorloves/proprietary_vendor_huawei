@@ -22,6 +22,7 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/angler/proprietary/etc/permissions/com.android.omadm.service.xml:system/etc/permissions/com.android.omadm.service.xml \
     vendor/huawei/angler/proprietary/etc/permissions/com.android.sdm.plugins.connmo.xml:system/etc/permissions/com.android.sdm.plugins.connmo.xml \
     vendor/huawei/angler/proprietary/etc/permissions/com.android.sdm.plugins.sprintdm.xml:system/etc/permissions/com.android.sdm.plugins.sprintdm.xml \
+    vendor/huawei/angler/proprietary/etc/permissions/com.google.android.camera.experimental2016.xml:system/etc/permissions/com.google.android.camera.experimental2016.xml \
     vendor/huawei/angler/proprietary/etc/permissions/privapp-permissions-angler.xml:system/etc/permissions/privapp-permissions-angler.xml \
     vendor/huawei/angler/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/huawei/angler/proprietary/etc/sysconfig/angler_common.xml:system/etc/sysconfig/angler_common.xml \
@@ -35,6 +36,7 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/angler/proprietary/lib64/libfilterpack_facedetect.so:system/lib64/libfilterpack_facedetect.so
 
 PRODUCT_PACKAGES += \
+    HwSarControlService \
     Tycho \
     CNEService \
     CarrierServices \
@@ -48,6 +50,7 @@ PRODUCT_PACKAGES += \
     SprintDM \
     atfwd \
     qcrilmsgtunnel \
+    com.google.android.camera.experimental2016 \
     qcrilhook
 
 PRODUCT_PACKAGES += \

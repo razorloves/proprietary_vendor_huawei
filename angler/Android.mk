@@ -20,6 +20,17 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),angler)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := HwSarControlService
+LOCAL_MODULE_OWNER := huawei
+LOCAL_SRC_FILES := proprietary/app/HwSarControlService/HwSarControlService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := Tycho
 LOCAL_MODULE_OWNER := huawei
 LOCAL_SRC_FILES := proprietary/app/Tycho/Tycho.apk
@@ -172,6 +183,16 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := com.google.android.camera.experimental2016
+LOCAL_MODULE_OWNER := huawei
+LOCAL_SRC_FILES := proprietary/framework/com.google.android.camera.experimental2016.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
